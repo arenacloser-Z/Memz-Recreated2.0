@@ -136,9 +136,9 @@ def randomcursor():
         pyautogui.hotkey('winleft', "m")
 
     
-def timer():
-    time.sleep(23)
-    bsod()
+#def timer():
+    #time.sleep(23)
+    #bsod()
     
 
 def main():
