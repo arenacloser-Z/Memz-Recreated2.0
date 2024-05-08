@@ -54,10 +54,9 @@ def throwawayroot():
 for i in range(0, 220):
     throwawayroot()
     if i/10 == int(i/10):
-        print("adas")
         toplevel.bell()
     time.sleep(0.01)
-Tk.mainloop(toplevel)
+
 bsod()
 
 
