@@ -71,7 +71,7 @@ for i in range(0, 230):
         toplevel.bell()
     if i == 220:
         bsod() # bsod is delayed so 10 more windows will open in meantime
-    time.sleep(0.01)
+    #time.sleep(0.01) re-enable if needed
 
 
 
